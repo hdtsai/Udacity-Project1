@@ -1,0 +1,237 @@
+
+/* separating the whole page to nav part（left） and main part(right)*/
+body {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d7ffcf;
+    display: flex;
+}
+
+/*to prevent img overflow*/
+img {
+    max-width: 100%;
+}
+
+/*content part is composed of header and main part*/
+.content-part {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 5%;
+    align-self: center;
+}
+
+/*header part*/
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px olivedrab solid;
+
+}
+
+.logo {
+    width: 18%;
+    align-self: center;
+
+}
+
+
+
+h1 {
+    font-size: 2rem;
+}
+
+.name-intro {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+/*main part*/
+main {
+    padding: 1% 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-work {
+    width: 35%;
+}
+
+.font-stress {
+    color: #7d97ad;
+    font-size: 1.8rem;
+}
+
+.works {
+    display: flex;
+}
+
+.work-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    font-size: 1.2rem;
+}
+
+.proj-intro {
+    font-style: italic;
+}
+
+footer {
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+/*nav part*/
+nav {
+    display: flex;
+    order: -1;
+    flex-direction: column;
+    align-self: center;
+    padding-left:5%;
+}
+/*set up 3 color squares*/
+.color-square-1 {
+    width: 100%;
+    padding-bottom: 100%;
+    background: #02b3e4;
+}
+
+.color-square-2 {
+    max-width: 100%;
+    padding-bottom: 100%;
+    background: #2d3c49;
+}
+
+.color-square-3 {
+    max-width: 100%;
+    padding-bottom: 100%;
+    background: #7d97ad;
+}
+
+@media screen and (max-width: 1024px){
+    /* separating the whole page to nav part（up） and main part(bottom)*/
+    body {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: gold;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*to prevent img overflow*/
+    img {
+        max-width: 100%;
+    }
+
+    /*content part is composed of header and main part*/
+    .content-part {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 5%;
+        align-self: center;
+    }
+
+    /*header part*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 3px cornflowerblue solid;
+    }
+
+    .logo {
+        width: 30%;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .name-intro {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+    /*main part*/
+    main {
+        padding: 1% 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-work {
+        width: 35%;
+    }
+
+    .font-stress {
+        color: #7d97ad;
+        font-size: 1.8rem;
+    }
+
+    .works {
+        display: flex;
+    }
+
+    .work-sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    .proj-intro {
+        font-style: italic;
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+
+    }
+    /*nav part*/
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+
+    }
+    /*set up 3 color squares*/
+    .color-square-1 {
+        width: 50%;
+        padding-bottom: 50%;
+        background: #02b3e4;
+    }
+    .color-square-2 {
+        max-width: 50%;
+        padding-bottom: 50%;
+        background: #2d3c49;
+    }
+
+    .color-square-3 {
+        max-width: 50%;
+        padding-bottom: 50%;
+        background: #7d97ad;
+    }
+
+
+}
+
+
+
